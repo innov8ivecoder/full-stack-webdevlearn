@@ -1,0 +1,86 @@
+<!DOCTTYPE html>
+<html>
+  <head>
+    <title>Basic Styling</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+
+      h1 {
+        color: red;
+        /*visibility: hidden;
+        display: none;*/
+        display: inline;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      #box1 {
+        background: black;
+        color: white;
+        width: 200px;
+        padding: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
+        border-width: 3px;
+        border-color: red;
+        border-style: solid;
+        float: left;
+      }
+
+      #box2 {
+        background: blue;
+        color: white;
+        width: 200px;
+        padding: 30px 20px;
+        margin: 20px;
+        border: 3px green solid;
+        float: right;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      ul.myList {
+        list-style: none;
+        padding: 0;
+        line-height: 2.2rem;
+      }
+
+      ul.myList li {
+        border-bottom: 1px dotted grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1 class="text-center">Welcome</h1>
+      <p class="text-center">This is a paragraph</p>
+      <p>This is another paragraph</p>
+    </div>
+
+    <div id="box1">
+      This is box 1
+    </div>
+
+    <div id="box2">
+      This is box 2
+    </div>
+
+    <div class="clr"></div>
+
+    <div>Hello</div>
+
+    <ul class="myList">
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </body>
+</html>

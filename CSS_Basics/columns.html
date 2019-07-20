@@ -1,0 +1,77 @@
+<!DOCTTYPE html>
+<html>
+  <head>
+    <title>Columns</title>
+    <style>
+      article {
+        column-count: 3;
+        column-gap: 40px;
+        /* column-rule-style: solid;
+        column-rule-width: 1px;
+        column-rule-color: rgb(20, 84, 87); */
+        column-rule: 1px solid coral;
+      }
+
+      article h1 {
+        column-span: all;
+      }
+
+      .textBox1 {
+        border: 2px solid;
+        padding: 20px;
+        width: 200px;
+        overflow: auto;
+        resize: both;
+      }
+
+      .textBox2 {
+        border: 1px solid black;
+        margin: 20px;
+        padding: 10px;
+        width: 300px;
+        height: 100px;
+        outline: 1px solid red;
+        outline-offset: 10px;
+      }
+
+      .flex-container {
+        width: 400px;
+        height: 250px;
+        background-color: black;
+        display: flex;
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+      }
+
+      .flex-item {
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      .first {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Article Title</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+      similique, doloremque illo ullam magni adipisci architecto commodi odio
+      consectetur inventore nihil aliquid soluta sit! Maxime consequatur
+      voluptate repudiandae doloremque illo?
+    </article>
+
+    <br />
+
+    <div class="textBox1">Try and resize this element</div>
+    <div class="textBox2">This element has a 10px outline</div>
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item first">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+  </body>
+</html>

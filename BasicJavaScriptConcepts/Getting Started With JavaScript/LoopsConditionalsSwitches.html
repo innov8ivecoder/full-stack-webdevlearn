@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loops, Conditionals & Switches</title>
+  </head>
+  <body>
+    <!-- <div id="displayPersonDetails"></div> -->
+    <ul id="personList"></ul>
+    <script>
+      //   for (i = 0; i <= 10; i++) {
+      //     console.log(i);
+      //   }
+      //   let i = 0;
+      //   while (i < 10) {
+      //     console.log(i);
+      //     i++;
+      //   }
+
+      //   let people = ["Bob", "Frank", "Sally", "Mike"];
+
+      //   for (let i = 0; i < people.length; i++) {
+      //     console.log(people[i]);
+      //   }
+
+      //   let people = [
+      //     {
+      //       name: "Tawanda",
+      //       age: 40
+      //     },
+      //     {
+      //       name: "Tsholo",
+      //       age: 34
+      //     },
+      //     {
+      //       name: "Siyabonga",
+      //       age: 27
+      //     }
+      //   ];
+
+      //   let output = "";
+      //   for (let i = 0; i < people.length; i++) {
+      //     console.log(people[i].name + " is " + people[i].age + " years old!");
+      //     output += people[i].name + " is " + people[i].age + " years old! \n\r";
+      //     // document.getElementById("displayPersonDetails").innerHTML = output;
+      //   }
+      //   for (let i = 0; i < people.length; i++) {
+      //     document.getElementById("personList").innerHTML +=
+      //       "<li>" +
+      //       people[i].name +
+      //       " is " +
+      //       people[i].age +
+      //       " years old!" +
+      //       "</li>";
+      //   }
+
+      let x = 20,
+        y = 20;
+      if (x < y) {
+        console.log(x + " is less than " + y);
+      } else if ((x = y)) {
+        console.log(x + " is equal to " + y);
+      } else {
+        console.log(x + " is more than " + y);
+      }
+
+      let name = "Paul";
+      switch (name) {
+        case "Changwa":
+          console.log("My name is Changwa");
+          break;
+        case "Berveley":
+          console.log("My name is Berveley");
+          break;
+        case "Tshepo":
+          console.log("My name is Tshepo");
+          break;
+        default:
+          console.log("My name is " + name);
+          break;
+      }
+    </script>
+  </body>
+</html>

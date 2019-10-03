@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript | Variables, Arrays & Objects</title>
+  </head>
+  <body>
+    <script>
+      // alert("Hello world");
+      // let x = 5;
+      // let y = 5;
+      // console.log(x + y);
+      // let person = "Tafadzwa Chitando";
+      // console.log("My name is " + person);
+      let a = 1,
+        b = 2,
+        c = 3;
+      console.log(b);
+
+      let animals = ["Dog", "Cat", "Horse"];
+      // let animals = new Array("Dog", "Cat", "Horse");
+      console.log(animals[1]);
+
+      animals[3] = "Cow";
+      console.log(animals);
+      animals.push("Pig");
+      // console.log(animals.length);
+      // console.log(animals.sort());
+
+      let person = [];
+      person["name"] = "Charles Fitch";
+      person["age"] = 35;
+      person["city"] = "New York";
+      console.log(person["name"]);
+
+      let car = { make: "Ford", model: "Mustang", year: 1964 };
+      // console.log(car.make);
+
+      let cars = [
+        {
+          make: "Ford",
+          model: "Mustang",
+          year: 1964
+        },
+        {
+          make: "Mercedes",
+          model: "Benz",
+          year: 2010
+        },
+        {
+          make: "Toyota",
+          model: "Corolla",
+          year: 2015
+        }
+      ];
+
+      console.log(cars[1].make);
+    </script>
+  </body>
+</html>
